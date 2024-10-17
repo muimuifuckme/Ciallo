@@ -1,13 +1,4 @@
 /*这里负责样式相关*/
-/*全局*/
-.text-bubble {  
-    font-size: 15px;  
-    font-weight: bold;   
-    padding: 10px;  
-    border-radius: 5px;  
-    pointer-events: none; /* 禁止干扰鼠标 */  
-    white-space: nowrap; /* 禁止换行 */  
-}
 /*中心ciallo*/
 .center {  
     width: 540px; /* 宽540 */  
@@ -18,7 +9,11 @@
     bottom: 0; /* 底距0 */  
     left: 0; /* 左距0 */  
     right: 0; /* 右距0 */  
-    pointer-events: none;
+    user-select: none;  
+    -webkit-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    pointer-events: none; 
 }  
 
 /*页脚*/
@@ -29,7 +24,7 @@ footer {
     width: 100%;  
     color: white;  
     text-align: center;  
-    padding: 20px;  
+    padding: 10px;  
     background-color: #ffffff; 
 }
 /*方块*/
@@ -41,3 +36,14 @@ footer {
     text-decoration: none;  
     border-radius: 8px;  
 }  
+
+.unselectable {  
+    user-select: none;  
+    -webkit-user-select: none;  
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    pointer-events: none; 
+  }  
+  marquee {  
+    display: inline-block;  
+  }  

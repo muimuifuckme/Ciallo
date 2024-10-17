@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
         var bubble = document.createElement('div');  
         bubble.className = 'text-bubble';  
         bubble.textContent = 'Ciallo～(∠・ω< )⌒★';  
+        
   
         // 初始样式  
         bubble.style.position = 'absolute';  
         bubble.style.left = event.clientX + 'px';  
         bubble.style.top = event.clientY + 'px';  
-        bubble.style.opacity = 1;  
+        bubble.style.opacity = 1;
+        bubble.style.pointerEvents='none';
   
         // 随机颜色  
         function getRandomColor() {  
