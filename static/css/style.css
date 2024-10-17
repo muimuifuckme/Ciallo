@@ -1,0 +1,43 @@
+/*这里负责样式相关*/
+/*全局*/
+.text-bubble {  
+    font-size: 15px;  
+    font-weight: bold;   
+    padding: 10px;  
+    border-radius: 5px;  
+    pointer-events: none; /* 禁止干扰鼠标 */  
+    white-space: nowrap; /* 禁止换行 */  
+}
+/*中心ciallo*/
+.center {  
+    width: 540px; /* 宽540 */  
+    height: 120px; /* 高120 */  
+    margin: auto; /* 外边距自动居中 */  
+    position: absolute; /* 绝对定位 */  
+    top: 0; /* 顶距0 */  
+    bottom: 0; /* 底距0 */  
+    left: 0; /* 左距0 */  
+    right: 0; /* 右距0 */  
+    pointer-events: none;
+}  
+
+/*页脚*/
+footer {  
+    position: fixed;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%;  
+    color: white;  
+    text-align: center;  
+    padding: 20px;  
+    background-color: #ffffff; 
+}
+/*方块*/
+.butten {  
+    display: inline-block;  
+    padding: 15px 32px;  
+    background-color: #ff6700;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 8px;  
+}  

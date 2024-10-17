@@ -1,0 +1,22 @@
+/*这里负责动画相关*/
+/*文本滚动*/
+.scroll-container {  
+    width: 100%;  
+    overflow: hidden;  
+    white-space: nowrap;  
+    position: relative;  
+}  
+.scroll-text {  
+    display: inline-block;  
+    padding-left: 100%;                /* 初始位于屏幕外 */  
+    animation: scrollText linear infinite;  
+    pointer-events: none;               /* 禁止点击 */  
+}  
+@keyframes scrollText {  
+    0% {  
+        transform: translateX(100%);  
+    }  
+    100% {  
+        transform: translateX(-100%);  
+    }  
+}  
