@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
         bubble.style.top = event.clientY + 'px';  
         bubble.style.opacity = 1;
         bubble.style.pointerEvents='none';
+        bubble.style.zIndex = 114514;
+        
   
         // 随机颜色  
         function getRandomColor() {  

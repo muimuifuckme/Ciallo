@@ -22,10 +22,10 @@ footer {
     bottom: 0;  
     left: 0;  
     width: 100%;  
-    color: white;  
     text-align: center;  
-    padding: 10px;  
-    background-color: #ffffff; 
+    padding: 10px; 
+    z-index: 0; 
+   
 }
 /*方块*/
 .butten {  
@@ -34,15 +34,17 @@ footer {
     background-color: #ff6700;  
     color: white;  
     text-decoration: none;  
-    border-radius: 8px;  
+    border-radius: 8px;
+    z-index: 1;  
 }  
 
-.unselectable {  
+.unselectable { 
     user-select: none;  
     -webkit-user-select: none;  
     -moz-user-select: none;  
     -ms-user-select: none;  
     pointer-events: none; 
+    z-index: 5; 
   }  
   marquee {  
     display: inline-block;  
